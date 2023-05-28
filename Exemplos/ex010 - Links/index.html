@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Tabalhando com Links</h1>
+    <h2>Links Externos</h2> <!--É aquele que direciona para outro site que não é o que ele está inserido.-->
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório público no GitHub</a></p> <!--A tag a vem de âncora | href: referência do hiperlink | target="_blank" indica que o link deve ser aberto em uma página em branco (indicado quando for link externo) | rel="external" relativo a externo (indica que o link é externo)-->
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">gratuito no YouTube</a></p>
+    <h2>Links Internos</h2>     <!--Faz uma ligação com uma página do seu site.-->
+    <p>Acesse a segunda página <a href="pag002.html" target="_self" rel="next">aqui</a>.</p> <!--Link interno | target="_self" indica que o deve ser aberta na própria aba | rel="next" indica que é a próxima página de navegação ou página de avanço-->
+    <p>Acesse a terceira página <a href="noticias/pag003.html" target="_self" rel="next">aqui</a></p>
+    <h2>Links para Visualização de Arquivos no Navegador</h2>
+    <ul>
+        <li><a href="livro/10 - Ligações em toda parte.pdf">Visualizar livro em PDF</a></li>
+    </ul>
+    <h2>Links para Downloads</h2>
+    <ul>
+        <li><a href="livro/10 - Ligações em toda parte.pdf" download="10. Ligações em toda parte.pdf" type="application/pdf">Baixar o livro em PDF</a></li>   <!--# significa que é um link vazio que você ainda está criando--> <!--download="NomedoArquivo" é o parâmetro que informa ao navegador que o link é para download do arquivo e não para navegação--> <!--type="" diz o tipo de mídia do arquivo-->
+        <li><a href="livro/10 - Ligações em toda parte.zip" download="10. Ligações em toda parte.zip" type="appication/zip">Baixar o livro compactado em ZIP</a></li>
+
+    </ul>
+</body>
+</html>
