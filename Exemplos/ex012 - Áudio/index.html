@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Reproduzindo Áudio</h1>
+    <audio src="audio/remembering-her.mp3" controls></audio> <!--É o jeito mais simples de carregar áudio-->
+
+    <audio preload="metadata" controls autoplay loop> <!--Carrega o áudio de acordo com a compatibilidade do navegador. Se não carregar o áudio mp3 da primeira linha, então carrega a da segunda linha e assim por diante-->
+        <!--preload="metadata": informa que o navegador não deve carregar o áudio junto com a página (o que torna o processo lento). | controls: exibe os controles de áudio no navegador. |autoplay: executa o áudio assim que a página termina de carregar. | loop: repete o áudio assim que terminar.-->
+        <source src="audio/remembering-her.mp3" type="audio/mpeg">
+        <source src="audio/remembering-her.ogg" type="audio/ogg">
+        <source src="audio/remembering-her.wav" type="audio/wav">   <!--Evite wav porque é muito pesado!-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="audio/remembering-her.mp3" download="remembering-her.mp3">Clique aqui para baixar o arquivo MP3</a>.</p> <!--Elemento padrão, exibe caso todos os outros elementos não funcionem no navegador.-->
+    </audio>
+</body>
+</html>
