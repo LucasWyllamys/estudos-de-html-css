@@ -1,0 +1,17 @@
+body {
+    font: 12pt Arial;
+}
+
+body#cinza {
+    background-color: rgb(211, 211, 211);
+}
+
+body#verde {
+    background-color: #a6eb9a;
+    color: #2a6218;
+}
+
+body#amarela {
+    background-color: #ffffe3;
+    color: #c3884b;
+}
