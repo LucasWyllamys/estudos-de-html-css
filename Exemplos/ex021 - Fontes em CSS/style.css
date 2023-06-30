@@ -6,36 +6,3 @@ body {
 h1, h2 {
     font-family: 'Times New Roman', Times, serif;
 }
-
-/*
-	• Fontes Famosas:
-		○ Arial
-		○ Verdada
-		○ Helvetica
-
-	• Safe Combinations: São combinações de fontes que o desenvolvedor deve fazer em CSS para caso um dispositivo não tenha determinada fonte, ele tenha outras opções de fontes semelhantes para exibir no lugar dela. Sempre termine a sua safe combination com um nome de fonte genérica.
-		○ Exe.: font-family: Arial, Helvetica, sans-serif;
-
-	• Nomes Genéricos:
-        ○ Exe.: sans-serif, serif, monospace, cursive, fantasy etc.
-
-    • font-family: É a família da fonte.
-
-	• font-size: É o tamanho da fonte. A recomendação da W3C é que se use as medidas em ou px.
-		○ Medidas Absolutas: As medidas absolutas são complicadas de serem usadas, pois elas não se adaptam aos diversos tamanho de telas, pois como o próprio nome diz, elas são absolutas. Exe.: 1px significa que o corpo da fonte tem 1 pixel.
-			§ cm: centímetro
-			§ mm: milímetro
-			§ in: polegada
-			§ px: pixel (16px, normalmente, é o tamanho padrão das fontes nos navegadores)
-			§ pt: ponto
-			§ pc: paica
-		○ Medidas Relativas:
-			§ em: Medida relativa ao tamanho atual da fonte (relativo ao M MAIÚSCULO de uma determinada fonte) 
-				□ 1em geralmente = 16px (geralmente é o padrão de tamanho de fontes dos navegadores).
-				□ Sendo assim, 2em = 32px; 0.5em = 8px etc.
-			§ ex: Medida relativa à altura x da fonte (relativo ao x minúsculo de uma fonte).
-			§ rem: Medida relativa ao tamanho do root (a fonte que está configurada no Body).
-			§ vw: Medida relativa à largura view port (porcentagem da largura da tela de exibição).
-			§ vh: Medida relativa à altura view port (porcentagem da altura da tela de exibição).
-               %: Porcentagem.
-*/
