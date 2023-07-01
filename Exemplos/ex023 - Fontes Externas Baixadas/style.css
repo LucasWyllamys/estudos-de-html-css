@@ -1,16 +1,43 @@
 @font-face {
-    font-family: 'Pokemon Hollow';
+    font-family: Pokemon Hollow;
     src: url(fonts/Pokemon\ Hollow.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Sketch';
+    font-family: Sketch;
     src: url(fonts/Sketch\ 3D.otf) format('opentype'),
          url(fonts/Sketch\ 3D.woff);
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: Carnevalee Freakshow;
+    src: url(fonts/carnevalee\ freakshow.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: Sketch, Times, serif;
+    font-size: 5em;
+}
+
+h2[id='pokemon'] {
+    font-family: Pokemon Hollow, Times, serif;
+    font-size: 4em;
+}
+
+h2[id='circus'] {   /*Fonte extraída de uma imagem*/
+    font-family: Carnevalee Freakshow, fantasy;
+    font-size: 4em;
+    letter-spacing: 20px;
 }
 
 /*
@@ -21,17 +48,3 @@
     - truetepe-aat (Apple Advanced Typography)
     - svg
 */
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-h1 {
-    font-family: 'Sketch', Times, serif;
-    font-size: 5em;
-}
-
-h2 {
-    font-family: 'Pokemon Hollow', Times, serif;
-    font-size: 3em;
-}

@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgba(160, 217, 221, 0.753);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    width: 600px;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px rgb(4, 39, 44);
+}
+
+h1 { 
+    color: rgb(7, 24, 59);
+}
+
+h1#principal {
+    text-align: center;
+}
+
+h2 {
+    color: rgb(49, 94, 131);
+}
+
+/*
+
+HTML --------- CSS
+id ----------- #
+class -------- .
+
+*/
