@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-    background-color: rgba(160, 217, 221, 0.753);
+    background-image: linear-gradient(to right, #E8E8E8, #96A4AB);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -11,25 +11,43 @@ main {
     margin: auto;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 5px 5px 30px rgb(4, 39, 44);
+    box-shadow: 5px 5px 30px #4c5357;
 }
 
 h1 { 
-    color: rgb(7, 24, 59);
+    color: #875D5E;
 }
 
 h1#principal {
     text-align: center;
+    background-color: #875D5E;
+    color: white;
 }
 
 h2 {
-    color: rgb(49, 94, 131);
+    color: #96A4AB;
+}
+
+.basico {
+    color: #65a360;
+}
+
+.intermediario {
+    color: rgb(204, 204, 43);
+}
+
+.avancado {
+    color: rgb(216, 29, 29);
+}
+
+.destaque {
+    background-color: rgba(235, 235, 54, 0.685);
 }
 
 /*
 
 HTML --------- CSS
-id ----------- #
-class -------- .
+id ----------- # (apenas um id por elemento)
+class -------- . (pode vários class por elemento)
 
 */

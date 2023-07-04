@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo da Hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p {   /*Aplica as configurações abaixo para os parágrafos que estão dentro da div (div > p)*/
+            display: none;  /*Não exibe os parágrafos que estão dentro da div (div > p)*/
+        }
+
+        div:hover > p { /*Quando o mouse estiver em cima da div, aplique as configurações no parágrafo p que está dentro da div*/
+            display: block; /*O elemento é exibido como um bloco, ocupando toda a largura disponível. Outros elementos não podem ser posicionados ao lado dele, apenas abaixo.*/
+            color: white;
+            background-color: red;
+            width: 200px;
+        }
+
+        div:hover { /*Aplica as configurações na div quando o mouse estiver em cima da div (pseudo-calss: hover)*/
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo Pseudo-Class: hover</h1>
+    <p>Passe o mouse sobre o texto abaixo...</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <p>Fim do exemplo.</p>
+</body>
+</html>
