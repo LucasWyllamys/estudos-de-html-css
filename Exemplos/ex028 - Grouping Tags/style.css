@@ -8,6 +8,8 @@ header {
     background-color: white;
     padding: 10px;
     margin: 10px;
+    border-radius: 10px 0px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.342);
 }
 
 h1 {
@@ -17,7 +19,7 @@ h1 {
 nav {
     background-color: lightslategray;
     padding: 5px;
-    box-shadow: 3px 3px 7px 1px rgba(0, 0, 0, 0.411);   /*sombra da caixa: deslocamento-horizontal deslocamento-vertical blur spread*/
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.342);   /*sombra da caixa: deslocamento-horizontal deslocamento-vertical blur spread*/
 }
 
 nav > a {
@@ -35,6 +37,8 @@ main {
     background-color: white;
     padding: 10px;
     margin: 10px;
+    border-radius: 10px 0px;     /*Raio da borda*/
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.342);
 }
 
 article {
@@ -47,7 +51,7 @@ article > aside {
 }
 
 footer {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.479);
     color: white;
     padding: 4px;
     text-align: center;
@@ -56,4 +60,12 @@ footer {
 
 footer > p {
     margin: 0px;
+}
+
+div#bola {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;     /*Raio da borda*/
 }
