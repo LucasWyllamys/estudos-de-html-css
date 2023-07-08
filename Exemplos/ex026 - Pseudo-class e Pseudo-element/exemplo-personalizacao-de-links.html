@@ -28,15 +28,15 @@
             color: blue;
         }
 
-        a.especial::before {    /*pseudo-class: aplica as configurações que estão dentro do seletor, para o que vem antes do <a>, para todos os links (<a>) da classe especial (class='especial')*/
+        a.especial::before {    /*pseudo-element: aplica as configurações que estão dentro do seletor, para o que vem antes do <a>, para todos os links (<a>) da classe especial (class='especial')*/
             content: '⇒ ';      /*Conteúdo que será escrito antes do conteúdo que está envelopado em <a>*/
         }
 
-        a.especial::after {     /*pseudo-class: aplica as configurações que estão dentro do seletor, para o que vai depois do <a>, para todos os links (<a>) da classe especial (class='especial')*/
+        a.especial::after {     /*pseudo-element: aplica as configurações que estão dentro do seletor, para o que vai depois do <a>, para todos os links (<a>) da classe especial (class='especial')*/
             content: ' ⇐';      /*Conteúdo que será escrito após o conteúdo que está envelopado em <a>*/
         }
 
-        a.normal::after {  /*pseudo-elemento: aplica as configurações para todos os links (<a>) onde class='normal' após (after) o conteúdo*/
+        a.normal::after {  /*pseudo-element: aplica as configurações para todos os links (<a>) onde class='normal' após (after) o conteúdo*/
             content: ' [link]';     /*Conteúdo que será escrito após o conteúdo que está envelopado em <a>*/
             text-decoration: none;
             font-weight: normal;
