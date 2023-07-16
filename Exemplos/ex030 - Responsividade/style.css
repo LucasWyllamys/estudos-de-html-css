@@ -1,0 +1,27 @@
+body {
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    
+}
+
+body > main > p {
+    text-indent: 20px;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.37);
+
+    /*Responsividade:------------------------------------------------------------------------*/
+
+    margin: auto;       /*Centraliza o main*/
+    max-width: 800px;   /*Largura máxima*/
+    min-width: none;    /*Largura mínima*/
+}
+
+img {
+    width: 100%;    /*Faz com que a imagem fique 100% da largura da caixa em que está inserida (responsiva).*/
+}
