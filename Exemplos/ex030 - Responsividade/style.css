@@ -19,7 +19,7 @@ main {
 
     margin: auto;       /*Centraliza o main*/
     max-width: 800px;   /*Largura máxima*/
-    min-width: none;    /*Largura mínima*/
+    min-width: 300px;    /*Largura mínima: 320px é a largura de celulares pequenos antigos*/
 }
 
 img {
