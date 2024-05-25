@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container {
+            position: relative; /*Posicionamento relativo*/
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+        }
+
+        #conteudo {
+            height: 200px;
+            width: 400px;
+            position: absolute; /*Posicionamento absoluto*/
+
+            background-color: yellow;
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            
+            top: 50%;   /*O topo da caixa fica na metade da altura do topo da veiwport*/
+            left: 50%;  /*A borda esquerda da caixa fica na metade da largura da veiwport*/
+
+            transform: translate(-50%, -50%);   /*move o #conteudo para cima e para a esquerda pela metade de suas próprias dimensões, efetivamente centralizando-o dentro do .container.*/
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
