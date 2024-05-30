@@ -1,5 +1,15 @@
 @charset "UTF-8";   /*Regra padrão para codificação de caracteres*/
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root { /*Declaração de variáveis*/
+    --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte-titulo: "Passion One", sans-serif;
+    --fonte-conteudo: "Sriracha", cursive;
+}
+
 * {   /*Configurações gerais*/
     margin: 0px;
     padding: 0px;
@@ -8,6 +18,7 @@
 html, body {
     min-height: 100vh;  /*Altura mínima em relação a viewport*/
     background-color: darkgray;
+    font-family: var(--fonte-padrao);   /*Chama a variável declarada na root*/
 }
 
 header {
@@ -19,6 +30,8 @@ header {
 header h1 {
     padding-top: 50px;
     font-variant: small-caps;   /*Retorna um texto com letras maiúsculas, no entanto com a primeira letra da palavra um pouco maior que as demais*/
+    font-family: var(--fonte-titulo);
+    font-size: 5em;
 }
 
 header p {
@@ -40,6 +53,12 @@ section {
     padding-bottom: 10vh;
     padding-left: 30px;
     line-height: 2em;   /*Espaçamento entre as linhas*/
+    font-family: var(--fonte-conteudo);
+    font-size: 2em;
+}
+
+section p {
+    padding-bottom: 2em;
 }
 
 section.normal {    /*Declaração de uma class*/
@@ -49,11 +68,25 @@ section.normal {    /*Declaração de uma class*/
 section.imagem {
     background-color: rgb(51, 51, 51);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;   /*Anexa a imagem de fundo fixando-a dando o efeito paralaxe*/
 }
 
 section.imagem p {
-    width: 400px;
-    background-color: rgba(0, 0, 0, 0.300);
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
 }
 
 footer {
