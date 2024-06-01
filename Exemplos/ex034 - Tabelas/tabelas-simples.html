@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas</title>
+    <title>Tabelas Simples</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -14,7 +14,7 @@
             border-collapse: collapse;  /*Propriedade que controla o comportamento das bordas das células de uma tabela*/
         }
 
-        tr.pintado {
+        table tr:nth-child(even) {  /*even/par = 2n = afeta todos os filhos pares*/
             background-color: lightgrey;
         }
 
@@ -36,22 +36,22 @@
                 table data (td) = dados da tabela (célula da tabela)
     -->
     <table>     <!--Tag para criação de tabela-->
-        <tr>                    <!--Primeira linha-->
+        <tr>    <!--Primeira linha-->
             <td>A1</td> 
             <td>B1</td>
             <td>C1</td>
         </tr>
-        <tr class="pintado">    <!--Segunda linha-->
+        <tr>    <!--Segunda linha-->
             <td>A2</td>
             <td>B2</td>
             <td>C2</td>
         </tr>
-        <tr>                    <!--Terçeira linha-->
+        <tr>    <!--Terçeira linha-->
             <td>A3</td>
             <td>B3</td>
             <td>C3</td>
         </tr>
-        <tr class="pintado">    <!--Quarta linha-->
+        <tr>    <!--Quarta linha-->
             <td>A4</td>
             <td>B4</td>
             <td>C4</td>
