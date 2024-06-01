@@ -11,6 +11,7 @@
 
         table {
             border-collapse: collapse;
+            position: relative;     /*Para deixar o cabeçalho fixo*/
         }
 
         caption {
@@ -22,8 +23,14 @@
         }
 
         thead, tfoot {
-            background-color: rgba(0, 0, 0, 0.733);
+            background-color: gray;
             color: white;
+        }
+
+        thead tr th {   /*Para deixar o cabeçalho fixo*/
+            position: sticky;
+            top: -1px;
+            background-color: rgb(128, 128, 128);
         }
 
         tbody tr:nth-child(even) {  /*even/par = 2n = afeta todos os filhos pares*/
@@ -82,6 +89,8 @@
         ------------------------------
         scope="col": Quando o título se refere à coluna
         scope="row": Quando o título se refere à linha
+        colspan="2": Ocupar duas colunas (expandir/mesclar)
+        rowspan="2": Ocupar duas linhas (expandir/mesclar) 
         ------------------------------
         :nth-child(even) = 2n = afeta todos os filhos pares
         :nth-child(odd) = 2n-1 = afeta todos os filhos impares
@@ -98,8 +107,7 @@
         </thead>
         <tfoot>
             <tr>
-                <th scope="row">Total de Habitantes</th>
-                <td></td>
+                <th scope="row" colspan="2">Total de Habitantes</th>
                 <td class="num"><strong>203.078.389</strong></td>
                 <td class="num"><strong>100%</strong></td>
             </tr>
@@ -269,5 +277,53 @@
             </tr>
         </tbody>
     </table>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia repudiandae consequuntur, repellendus modi asperiores deleniti id deserunt suscipit autem iusto, sequi a? Molestiae vitae suscipit dolor recusandae qui eos!
+    </p>
 </body>
 </html>
