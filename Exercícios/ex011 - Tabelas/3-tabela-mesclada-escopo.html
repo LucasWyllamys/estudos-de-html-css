@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela 03</title>
+    <title>Exercício de Tabela</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -19,9 +19,23 @@
             margin-bottom: 3px;
         }
 
+        thead {
+            background-color: gray;
+            color: white;
+        }
+
+        tr.media {
+            background-color: gray;
+            color: white;
+        }
+
         th, td {
             border: 1px solid black;
             padding: 10px;
+        }
+
+        td.nota {
+            text-align: center;
         }
     </style>
 </head>
@@ -30,19 +44,19 @@
         <caption>Boletim Escolar</caption>
         <thead>
             <tr>
-                <th rowspan="2" class="cabecalho">Área</th>
-                <th rowspan="2" class="cabecalho">Disciplinas</th>
-                <th colspan="2" class="cabecalho">Notas</th>
-                <th rowspan="2" class="cabecalho">Média</th>
+                <th rowspan="2" class="cabecalho" scope="col">Área</th>
+                <th rowspan="2" class="cabecalho" scope="col">Disciplinas</th>
+                <th colspan="2" class="cabecalho" scope="colgroup">Notas</th>
+                <th rowspan="2" class="cabecalho" scope="col">Média</th>
             </tr>
             <tr>
-                <th>Nota 1</th>
-                <th>Nota 2</th>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="3">Exatas</th>
+                <th rowspan="3" scope="rowgroup">Exatas</th>
                 <td class="disciplina">Matemática</td>
                 <td class="nota">0.0</td>
                 <td class="nota">0.0</td>
@@ -60,12 +74,12 @@
                 <td class="nota">0.0</td>
                 <td class="nota">0.0</td>
             </tr>
-            <tr>
-                <th colspan="4" class="media">Média de Exatas</th>
+            <tr class="media">
+                <th colspan="4" scope="row">Média de Exatas</th>
                 <td class="nota">0.0</td>
             </tr>
             <tr>
-                <th rowspan="2">Humanas</th>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
                 <td class="disciplina">História</td>
                 <td class="nota">0.0</td>
                 <td class="nota">0.0</td>
@@ -77,8 +91,8 @@
                 <td class="nota">0.0</td>
                 <td class="nota">0.0</td>
             </tr>
-            <tr>
-                <th colspan="4" class="media">Média de Humanas</th>
+            <tr class="media">
+                <th colspan="4" scope="row">Média de Humanas</th>
                 <td class="nota">0.0</td>
             </tr>
         </tbody>

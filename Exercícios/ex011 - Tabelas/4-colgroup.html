@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios com Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+        }
+
+        th, td {
+            border: 1px solid black;
+            width: 100px;
+            height: 20px;
+            padding: 5px;
+        }
+
+        col#nome {
+            background-color: lightgray;
+        }
+
+        col.verde {
+            background-color: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>  <!--A tag "colgroup" é usada em conjunto com a tag "col" e o parâmetro "id" ou "class" para referenciar as colunas da tabela, de forma que se torna possível referenciar os id's ou class definidos no CSS-->
+            <col id="nome">
+            <col id="sexo">
+            <col class="verde" span="2">    <!--O parâmetro span expande à coluna referenciada a quantidade de colunas definidas à direita-->
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Cáudio</td>
+                <td>M</td>
+                <td>28</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>42</td>
+                <td>Professor</td>
+            </tr>
+            <tr>
+                <td>Hélio</td>
+                <td>M</td>
+                <td>19</td>
+                <td>Vendedor</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>39</td>
+                <td>Médica</td>
+            </tr>
+            <tr>
+                <td>Otávio</td>
+                <td>M</td>
+                <td>22</td>
+                <td>Nutricioista</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
