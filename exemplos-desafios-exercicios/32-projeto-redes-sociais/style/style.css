@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh;  /*Ocupa 100% da altura da view port*/
+    width: 100vw;   /*Ocupa 100% da largura da view port*/
+}
+
+body {
+    background: url('../imagens/fundo-madeira.jpg') no-repeat top center;
+    background-size: cover; /*Ocupa a wiew port inteira, mesmo que não exiba 100% da imagem*/
+    background-attachment: fixed;   /*A imagem de fundo fica fixa não se movendo com a rolagem do conteúdo da página*/
+}
+
+main {
+    position: relative; /*Posiciona o elemento em relação a sua posição original no fluxo normal do documento*/
+    height: 100vh;  /*Ocupa 100% da largura da view port*/
+}
+
+section#celular {
+    position: absolute; /*O elemento é retirado do fluxo normal do documento e é posicionado em relação ao seu contêiner posicionado mais próximo*/
+    top: 50%;   /*Move o elemento em relação a altura do contêiner*/
+    left: 50%;  /*Move o elemento em relação a largura do contêiner*/
+    transform: translate(-50%, -50%);   /*Move o elemento em relação à sua posição original no eixo X e/ou Y*/
+    width: 311px;
+    height: 627px;
+    background: url('../imagens/frame-iphone.png') no-repeat;
+}
