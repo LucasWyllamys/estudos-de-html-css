@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdos em iframes</title>
+    <style>
+        div#vimeo {
+            padding: 30% 0 0 0;
+            position:relative;
+            max-width: 1000px;
+        }
+
+        iframe#vimeo {
+            position: absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            margin-left: -100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conteúdos dentro de iframes</h1>
+    <h2>Vídeos do Vimeo</h2>
+    <p>Os vídeos do Vímeo utilizam iframe no código de incorporação.</p>
+    <div id="vimeo">    <!--Vídeo responsivo do Vimeo-->
+        <iframe src="https://player.vimeo.com/video/300566368?h=fa26a9e8f5&title=0&byline=0&portrait=0&badge=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen id="vimeo"></iframe>
+    </div>
+    <script src="https://player.vimeo.com/api/player.js">
+        
+    </script>
+
+    <h2>Vídeos do YouTube</h2>
+    <p>Os vídeos do YouTube utilizam iframe no código de incorporação.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jfKfPfyJRdk?si=CSuvqNS4JMvOL0nu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    <!--Vídeo não responsivo!-->
+
+    <h2>Mapas do Google</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2926940794273!2d-43.17702615017693!3d-22.902572617552444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f58a6a00a9d%3A0x3f251d85272f76f7!2sHostnet%20Internet!5e0!3m2!1spt-BR!2sbr!4v1718843265783!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <h2>Mapas do Waze</h2>
+    <iframe src="https://embed.waze.com/iframe?zoom=16&lat=-22.902449&lon=-43.174591&ct=livemap" width="600" height="450" allowfullscreen></iframe>
+
+    <h2>Documentos na Web</h2>
+    <p>Você pode incorporar qualquer documento que esteja na web, seja ele planilha, documento do word, apresentações de power point etc.</p>
+    <iframe width="700" height="500" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=51D2984352E7761C%2176013&authkey=%21AC2pA0Z-iGcfx6I&em=2&AllowTyping=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
+</body>
+</html>

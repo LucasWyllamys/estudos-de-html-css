@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aumentando a Segurança do Iframe</title>
+</head>
+<body>
+    <h1>Site Principal</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci at ea deserunt, nemo dignissimos alias eos, esse eveniet cumque nisi dolorum architecto unde quos quidem explicabo sit in corporis vitae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi consequatur amet itaque corporis minus ab nam! Tempore ipsa, doloremque quaerat nulla corrupti quos veniam autem ratione voluptatem dignissimos expedita. Cumque!
+    </p>
+    <iframe src="formulario-de-exemplo.html" frameborder="1" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer">
+        Seu navegador não é compatível com isso...
+    </iframe>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi cum eveniet assumenda aliquam earum officia culpa repellendus eos placeat est, quaerat dolores ut, quibusdam harum? Maxime dignissimos rerum earum laboriosam!
+    </p>
+    <iframe src="script-de-exemplo.html" frameborder="1" referrerpolicy="no-referrer" sandbox="allow-scripts">
+        Seu navegador não é compatível com isso...
+    </iframe>
+    <!--O parâmetro sandbox="sandbox" bloqueia todos os acessos do site dentro do iframe aos dados de seu site, bloqueia também envios de formulários e scripts-->
+    <!--O parâmetro sandbox="allow-same-origin" permite executar conteúdos que estejam no iframe e que sejam da mesma origem (mesmo local)-->
+    <!--O parâmetro sandbox="allow-forms" permite executar conteúdos de formulários-->
+    <!--O parâmetro sandbox="allow-scripts" permite a execução de scripts-->
+    <!--Quando um ou mais parâmetros do sandbox são ativados todos os outros que não foram informados são desativados-->
+    <!--O parâmetro referrerpolicy="no-referrer" informa que o conteúdo carregado dentro do iframe não pode coletar dados do usuário!-->
+</body>
+</html>
