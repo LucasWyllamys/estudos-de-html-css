@@ -1,0 +1,56 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: bisque;
+}
+
+div#static {
+    position: static;   /*A ordem dos elementos no browser é o mesma que está no código (é o posicionamento padrão!). É o posicionamento padrão, o elemento segue o fluxo normal do documento sem qualquer deslocamento. Não é possível usar as propriedades top, left, bottom e right.*/
+    background-color: rgba(255, 0, 0, 0.3);
+    width: 80%;
+    height: 200px;
+}
+
+div#relative {
+    position: relative;     /*É usada para posicionar um elemento em relação à sua posição original no fluxo normal do documento. Essa propriedade permite ajustar a posição do elemento sem removê-lo do fluxo normal, ou seja, outros elementos ao redor ainda reconhecem o espaço original ocupado por ele.*/
+    background-color: rgba(0, 255, 0, 0.3);
+    width: 80%;
+    height: 200px;
+    left: 50px; /*Usado em conjuto com o position relative. O elemento se movimenta 50px da esquerda para a direita em relação a sua posição original*/
+    top: 50px;  /*Usado em conjuto com o position relative. O elemento se movimenta 50px de cima para baixo em relação a sua posição original*/
+}
+
+section#relative {
+    position: relative;
+    border: black solid 1px;
+    width: 80%;
+    height: 200px;
+}
+
+div#absolute {
+    position: absolute;     /*O elemento é retirado do fluxo normal do documento e é posicionado em relação ao seu contêiner posicionado (que não tenha um posicionamento static) mais próximo.*/
+    background-color: rgba(0, 0, 255, 0.3);
+    width: 50%;
+    height: 100px;
+    top: 50px;  /*O elemento se move 50px do topo para baixo em relação ao elemento pai posicionado*/
+    right: 20px;    /*O elemento se move 20px da direita para a esquerda em relação ao elemento pai posicionado*/
+}
+
+div#fixed {
+    position: fixed;    /*O elemento é retirado do fluxo normal do documento e é posicionado em relação à janela de visualização (viewport), permanecendo fixo durante a rolagem.*/
+    background-color: rgba(42, 147, 144, 0.736);
+    width: 100%;
+    height: 50px;
+    color: white;
+    top: 0px;
+    left: 0px;
+}
+
+div#sticky {
+    position: sticky;   /*O elemento é tratado como relativo até que seu contêiner pai seja rolado para uma posição específica, momento em que se torna fixo.*/
+    background-color: rgba(223, 226, 43, 0.39);
+    width: 70%;
+    height: 100px;
+    top: 0px;   /*Fixa na parte de cima da view port quando o scroll é deslocado para baixo*/
+    bottom: 0px;    /*Fixa na parte de baixo da view port quando o scroll é deslocado para cima*/
+    left: 50px;
+}
