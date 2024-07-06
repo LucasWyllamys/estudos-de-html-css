@@ -7,10 +7,21 @@
 </head>
 <body>
     <h1>Formulário Básico</h1>
-    <form action="script-cadastro.php" autocomplete="on">  <!--Formulário básico funcional, mas não é o jeito correto de se fazer!-->
-        <p>Nome: <input type="text" name="nome" id="nome"></p>  <!--Caixa do tipo texto-->
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>   <!--Caixa do tipo texto-->
-        <p><input type="submit" value="Enviar"></p>     <!--Botão de submeter-->
+    <form action="cadastro.php" method="post" autocomplete="on">  <!--O parâmetro action="cadastro.php" relaciona o botão de submeter ao arquivo PHP. O parâmetro method="" (get, post) define o método de envio dos dados do formulário para o servidor.-->
+        <p> 
+            <label for="inome">Nome:</label> <!--O parâmetro for="" é usado para relacionar o label ao input por meio do valor do parâmetro id=""-->
+            <input type="text" name="nome" id="inome">  <!--input do tipo texto-->
+        </p> 
+        <p> 
+            <label for="isobrenome">Sobrenome:</label>
+            <input type="" name="sobrenome" id="isobrenome">    <!--input do tipo texto-->
+        </p>
+        <p> 
+            <input type="submit" value="Enviar">    <!--Botão de submeter-->
+        </p>     
     </form>
+    <!--o parâmetro name="" é um identificador normalmente usados pelo HTML e PHP-->
+    <!--o parâmetro id="" é um identificador normalmente usados pelo JavaScript e CSS-->
+    <!--SEMPRE USE AS LABELS!-->
 </body>
 </html>
