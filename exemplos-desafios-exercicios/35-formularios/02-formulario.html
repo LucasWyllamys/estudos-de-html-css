@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">  <!--O parâmetro action="cadastro.php" relaciona o botão de submeter ao arquivo PHP. O parâmetro method="" (get, post) define o método de envio dos dados do formulário para o servidor.-->
+      <p>
+        <label for="iusuario">Usuário: </label> <!--O parâmetro for="" é usado para relacionar o label ao input por meio do valor do parâmetro id=""-->
+        <input type="text" name="usuario" id="iusuario" required minlength="9" maxlength="9" size="20" placeholder="CLB000000" autocomplete="username"> <!--input do tipo texto-->
+      </p>
+      <p>
+        <label for="isenha">Senha: </label>
+        <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" size="30" placeholder="mínimo 8 letras" autocomplete="current-password"> <!--input do tipo password (senha)-->
+      </p>
+      <input type="submit" value="ENVIAR">  <!--Botão de submeter-->
+      <input type="reset" value="LIMPAR">   <!--Botão de reset (limpar campos)-->
+    </form>
+    <!--SEMPRE USE AS LABELS!-->
+    <!--o atributo name="" é um identificador normalmente usados pelo HTML e PHP-->
+    <!--o atributo id="" é um identificador normalmente usados pelo JavaScript e CSS-->
+    <!--O atributo 'required' torna o campo obrigatório!-->
+    <!--O atributo minlength="" define a quantidade mínima de caracteres aceitos pela input-->
+    <!--O atributo maxlength="" define a quantidade máxima de caracteres aceitos pela input-->
+    <!--O atributo size="" define a quantidade de caracteres que serão exibidos na input-->
+    <!--O atributo placeholder="" exibe uma dica na imput-->
+    <!--
+    O atributo autocomplete="" quando colocado em uma tag <input>, e quando autocomplete="on" na tag <form>, serve para informar ao nevegador que tipo de input é para que ele consiga sugerir o texto para autocompletar o campo.
+      - Quando autocomplete="new-password" significa que se trata de uma nova senha.
+      - Quando autocomplete="current-password" significa que se trata da senha atual. O navegador vai no seu gerenciador de senhas e sugere a senha para o usuário em questão.
+    -->
+</body>
+</html>
