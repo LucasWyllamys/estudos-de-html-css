@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Aluno</title>
+</head>
+<body>
+  <form action="cadastro.php" method="get" autocomplete="on">
+    <p>   
+      <label for="inome">Nome</label>
+      <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name" required>                               <!--input:text-->
+    </p>
+    <p>
+      <label for="imedia">Média</label>
+      <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" required step="0.1">                                                 <!--input:number-->
+    </p>
+    <p>
+      <label for="imes">Período Letivo</label>
+      <input type="month" name="mes" id="imes" value="2020-07">   <!--input:month-->
+    </p>
+    <p>
+      <label for="idata">Data da Prova</label>
+      <input type="date" name="data_prova" id="idata">            <!--input:date-->
+    </p>
+    <p>
+      <label for="ihora">Hora da Prova</label>
+      <input type="time" name="hora_prova" id="ihora">            <!--input:time-->
+    </p>
+    <p>
+      <input type="submit" value="ENVIAR">
+      <input type="reset" value="LIMPAR">
+    </p>
+  </form>
+</body>
+</html>
+<!--
+- Os parâmetros min="0" e max="10" limitam o intervalo de números em uma input:number
+- O atributo step="" especifica o intervalo de valores válidos que o usuário pode inserir (valor padrão é 1). 
+- O atributo value="" especifica o valor do campo.
+-->
