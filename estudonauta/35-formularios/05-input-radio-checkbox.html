@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imasculino" value="M" checked> <label for="imasculino">Masculino</label><br>    
+            <input type="radio" name="sexo" id="ifeminino" value="F"> <label for="ifeminino">Feminino</label> 
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="basquete" id="ibasquete" checked> <label for="ibasquete">Basquete</label><br>
+            <input type="checkbox" name="futebol" id="ifutebol"> <label for="ifutebol">Futebol</label><br>
+            <input type="checkbox" name="natacao" id="inatacao"> <label for="inatacao">Natação</label><br>
+            <input type="checkbox" name="tenis" id="itenis" checked> <label for="itenis">Tênis</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="LIMPAR">
+        </p>
+    </form>
+</body>
+</html>
+
+<!--
+Atributos:
+    - O atributo name="" deve ter o mesmo nome em todas as input:radio relacionadas na tag <fieldset> para que funcione corretamente (Exemplo: name="sexo")!
+    - O atributo value"" no input:radio indica qual valor retornará se o controle em questão estiver verificado (selecionado).
+    - O atributo checked indica que o controle é verificado (selecionado) por padrão.
+-->
