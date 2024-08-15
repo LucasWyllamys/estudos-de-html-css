@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iestado">Estado</label>
+            <select name="estado" id="iestado">      <!--<select>-->
+                <option value="" selected>--- Escolha ---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprofissao">Profissão</label>
+            <input type="text" name="profissao" id="iprofissao" list="lista_profissoes">
+            <datalist id="lista_profissoes">    <!--<datalist>-->
+                <option>Administrador</option>
+                <option>Contabilista</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="iobservacoes">Observações: </label><br>
+            <textarea name="observacoes" id="iobservacoes" cols="30" rows="10"></textarea>  <!--<textarea>-->
+        </p>
+        <p>
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="LIMPAR">
+        </p>
+    </form>
+</body>
+</html>
+<!--
+    - <select>: controle que cria uma lista de opções/itens pré-definidos.
+    - O atributo selected é usado para definir um item como padrão numa lista suspensa de itens definidos.
+    - <option>: controle usado para exibir um item na lista de itens da tag <select> ou <datalist>.
+    - <optgroup>: controle usado para grupar itens de uma lista.
+    - O atributo value="" indica o valor do item na tag <option>, o código que será enviado pelo método se a opção for selecionada.
+    - <datalist>: controle usado para atribuir uma lista de opções a uma tag de input.
+    - O atributo list="" relaciona a tag input a lista fornecida pela tag <datalist> por meio do atributo id"".
+    - <textarea>: controle exibe uma caixa de texto para escrever textos longos.
+    - Os atributos: cols="" e rows="" indicam, respectivamente, a quantidade de colunas e quantidade de linhas que serão exibidos na <textarea> assim que a página for carregada.
+-->

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="POST" autocomplete="on">
+        <p>
+            <label for="icor">Cor: </label>
+            <input type="color" name="cor" id="icor" value="#00ff00">                 <!--input:color-->
+        </p>
+        <p>
+            <label for="inivel">Nível de Satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">   <!--input:range-->
+        </p>
+        <p>
+            <label for="ifoto">Foto do perfil</label>
+            <input type="file" name="foto" id="ifoto">                                <!--input:file-->
+        </p>
+        <p>
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="LIMPAR">
+        </p>
+    </form>
+</body>
+</html>
+
+<!-- 
+    - O parâmero value="" indica a cor padrão no controle input:color.
+    - O parâmero value="" indica o valor padrão no controle input:range.
+    - Os parâmetros min="" e max="" indicam, respectivamente, o valor mínimo e máxima do intervalo no controle input:range.
+    - Obs.: Sempre que você for usar o controle input:file você sempre deve usar o método post, pois o método get suporta apenas até 3 MB ou 3000 Bytes.
+-->
