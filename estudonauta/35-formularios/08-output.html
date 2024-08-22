@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+</head>
+<body>
+    <h1>Exemplo 1</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inum1">1º Número: </label>
+            <input type="number" name="num1" id="inum1" oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)" required>
+        </p>
+        <p>
+            <label for="inum2">2º Número: </label>
+            <input type="number" name="num2" id="inum2" oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)" required>
+        </p>
+        <p>
+            <label for="isoma">Soma: </label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+        <p>
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="LIMPAR">
+        </p>
+    </form>
+    <h1>Exemplo 2</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inum">Número: </label>
+            <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ivalor.innerHTML = Number(inum.value)">
+            <output id="ivalor">5</output>
+        </p>
+        <p>
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="LIMPAR">
+        </p>
+    </form>
+    <h1>Exemplo 3</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iano">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2024" oninput="calcularIdade()">
+        </p>
+        <p>
+            <label for="iidade">Sua idade é: </label>
+            <output id="iidade">0</output>
+        </p>
+        <p>
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="LIMPAR">   
+        </p>
+    </form>
+    <script>
+        function calcularIdade() {
+            let anoAtual = new Date().getFullYear()
+            iidade.innerHTML = anoAtual - iano.value
+        }
+    </script>
+</body>
+</html>
+<!--
+    - A tag <output> é usada para exibir dados na tela decorrentes da interação de um formulário.
+    - O atributo oninput="" é o evento que é acionado quando é digitado algum no <input>.
+    - Obs.: Importante lembrar que quando o formulário é submetido ou resetado, o valor no output não é enviado (ou resetado) no método, apenas os valores das inputs são submetidos ou resetados!
+-->
