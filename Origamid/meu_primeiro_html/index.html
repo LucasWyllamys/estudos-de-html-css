@@ -1,0 +1,20 @@
+
+<h1 id="texto">Clique em mim!</h1>
+
+<style>  
+    h1 {
+        color: blue;
+    }
+</style>
+
+<script>
+    let txt = document.getElementById('texto')
+
+    function modificarCor() {
+        txt.style.color = 'red'
+        console.log('Função chamada!')
+    }
+
+    txt.addEventListener('click', modificarCor)
+</script>
+
