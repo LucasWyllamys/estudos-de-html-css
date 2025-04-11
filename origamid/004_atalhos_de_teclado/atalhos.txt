@@ -1,3 +1,0 @@
-- Ctrl + C: Copia
-    - Se você selecionar um conteúdo e usar este atalho, apenas o conteúdo selecionado será copiado.
-    - Se você não selecionar nada, a linha inteira será copiada onde o marcador estiver localizado.

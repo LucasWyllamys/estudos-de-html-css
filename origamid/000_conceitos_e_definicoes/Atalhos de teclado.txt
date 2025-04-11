@@ -1,0 +1,21 @@
+- Ctrl + C: Copia o conteúdo selecionado ou a linha inteira.
+    * Se você selecionar um conteúdo e usar este atalho, apenas o conteúdo selecionado será copiado.
+    * Se você não selecionar nada, a linha inteira será copiada onde o marcador estiver localizado.
+
+- Ctrl + X: Recorta o conteúdo selecionado ou a linha inteira.
+    * Se você selecionar um conteúdo e usar este atalho, apenas o conteúdo selecionado será recortado.
+    * Se você não selecionar nada, a linha inteira, onde o marcador estiver localizado, será recortada.
+
+- Ctrl + V: Cola o conteúdo copiado ou recortado.
+
+- Alt + Seta para Cima ou Seta para Baixo: Move a linha inteira para cima ou para baixo.
+
+- Ctrl + Z: Desfaz
+
+- Ctrl + Shift + Z: Refaz
+
+- Ctrl + D: Seleciona o próximo parecido com o conteúdo selecionado.
+
+- Ctrl + /: Comenta o código.
+
+- Ctrl + B: Esconde a side bar.
