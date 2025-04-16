@@ -1,9 +1,0 @@
-- HTML (HyperText Markup Language): Serve para marcarmos os textos (título, parágrafo, lista), adicionarmos imagens, vídeos, links e mais. Dá sentido (semântica) ao conteúdo.
-
-- Tags: As tag's (etiquetas) servem para marcarmos o conteúdo no HTML. Geralmente abrimos <a> e fechamos </a> após o conteúdo.
-
-- Atributos: Os atributos dão informações extras sobre uma tag para o browser.
-
-- CSS (Cascading Style Sheets): Define o estilo do documento. Cor do texto, tamanho do texto, tamanho da imagem, posição do conteúdo, cor de fundo, sombras e mais.
-
-- JavaScript: Altera o comportamento do documento. Utilizado para modificar o estilo, criar galerias de imagens, observar as ações do usuário, puxar informações de outros sites, manipular dados e mais.
