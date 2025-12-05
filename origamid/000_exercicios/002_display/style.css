@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px;
+    padding: 0px;
+}
+
+.item {
+    background-color: #111;
+    color: #fff;
+    border-radius: 4px;
+    margin: 20px;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+h2 {
+    margin: 0px;
+}
+
+p {
+    color: #b2b2b2;
+    font-size: 1em;
+}
+
+span {
+    color: #febe01;
+}
+
+a {
+    display: inline-block; /* Torna o link um bloco inline, fazendo com que ele respeite as propriedades do box model */
+    background-color: #febe01;
+    color: #332200;
+    border-radius: 4px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 1em;
+    text-decoration: none;
+}

@@ -1,0 +1,16 @@
+span,
+a,
+strong {
+    background-color: darkcyan;
+    color: white;
+    border: 1px solid black;
+}
+
+h1,
+p,
+h2,
+div {
+    background-color: goldenrod;
+    color: white;
+    border: 1px solid black;
+}
