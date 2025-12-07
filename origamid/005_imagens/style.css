@@ -1,0 +1,13 @@
+body {
+    background-color: darkgrey;
+}
+
+img {
+    max-width: 100%; /* Faz a imagem nunca ultrapassar o tamanho do seu contêiner (pai) */
+    height: auto;    /* Mantém a proporção da imagem ao redimensionar */
+    display: block; /* Remove o espaço embaixo da imagem causado pelo display inline */
+}
+
+.bikcraft {
+    width: 800px;
+}
