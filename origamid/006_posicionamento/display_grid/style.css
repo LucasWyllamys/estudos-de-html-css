@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte padrão para o corpo da página */
+}
+
+h1 {
+    text-align: center; /* Centraliza o texto do título */
+}
+
+.grid {
+    display: grid; /* Define o contêiner como um grid */
+    grid-template-columns: 1fr 1fr; /* Cria duas colunas de largura igual */
+    gap: 20px; /* Adiciona um espaçamento de 20px entre os itens do grid */
+}
+
+.item {
+    background: #f7f7f7; /* Define a cor de fundo cinza claro para os itens */
+    border: 1px solid #e7e7e7; /* Define a borda cinza clara ao redor dos itens */
+    padding: 20px; /* Adiciona um preenchimento interno de 20px aos itens */
+    border-radius: 4px; /* Adiciona cantos arredondados aos itens */
+    display: grid; /* Define o item como um grid */
+}
+
+h2 {
+    margin-top: 0; /* Remove a margem superior do título secundário */
+}
+
+.comprar {
+    background: #a8f; /* Define a cor de fundo roxa para o botão de compra */
+    color: #103; /* Define a cor do texto para um tom escuro */
+    padding: 10px 20px; /* Adiciona um preenchimento interno de 10px na vertical e 20px na horizontal */
+    text-decoration: none; /* Remove o sublinhado do link */
+    border-radius: 4px; /* Adiciona cantos arredondados ao botão */
+}
