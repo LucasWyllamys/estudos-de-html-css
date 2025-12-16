@@ -1,0 +1,56 @@
+.grid {
+    display: grid; /* Define o contêiner como um grid */
+    gap: 20px; /* Adiciona um espaçamento de 20px entre os itens do grid */
+    grid-template-columns: repeat(2, 1fr); /* Cria duas colunas de largura igual */
+}
+
+/* Estilos Gerais */
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte padrão para o corpo da página */
+    margin: 40px; /* Adiciona uma margem de 40px ao redor do corpo */
+}
+
+.titulo {
+    grid-column: 1 / -1; /* Faz o título ocupar da linha vertical 1 até a última linha */
+    font-size: 48px; /* Define o tamanho da fonte para 48px */
+}
+
+.info {
+    display: grid; /* Define o contêiner como um grid */
+    gap: 20px; /* Adiciona um espaçamento de 20px entre os itens do grid */
+    place-items: start; /* Alinha os itens do grid ao início tanto na horizontal quanto na vertical */
+    place-self: start; /* Alinha o contêiner ao início tanto na horizontal quanto na vertical */
+}
+
+.preco {
+    background: #ddd;
+    padding: 5px 10px; 
+    border-radius: 4px;
+    font-size: 20px; /* Define o tamanho da fonte para 20px */
+}
+
+.foto {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner pai */
+    border-radius: 4px; /* Adiciona cantos arredondados à imagem */
+}
+
+.descricao {
+    font-size: 20px; /* Define o tamanho da fonte para 20px */
+}
+
+h1,
+p {
+    margin: 0px; /* Remove a margem padrão de h1 e p */
+    line-height: 1; /* Define a altura da linha para 1 */
+}
+
+.botao-comprar {
+    background: #a8f; /* Define a cor de fundo roxa para o botão de compra */
+    color: #103; /* Define a cor do texto para um tom escuro */
+    padding: 10px 20px; /* Adiciona um preenchimento interno de 10px na vertical e 20px na horizontal */
+    text-decoration: none; /* Remove o sublinhado do link */
+    border-radius: 4px; /* Adiciona cantos arredondados ao botão */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    font-size: 20px; /* Define o tamanho da fonte para 20px */
+}       

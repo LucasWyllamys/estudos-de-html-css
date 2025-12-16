@@ -1,0 +1,61 @@
+* {
+    padding: 0px; /* Remove o preenchimento padrão de todos os elementos */
+    margin: 0px; /* Remove a margem padrão de todos os elementos */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte padrão para o corpo da página */
+}
+
+h1 {
+    text-align: center; /* Centraliza o texto do título */
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.grid {
+    display: grid; /* Define o contêiner como um grid */
+    grid-template-columns: repeat(3, auto); /* Cria duas colunas com largura fixa de 300px */
+    gap: 20px; /* Adiciona um espaçamento de 20px entre os itens do grid */
+    place-content: center center; /* Centraliza o conteúdo do grid tanto na horizontal quanto na vertical */
+    padding: 50px; /* Adiciona um preenchimento interno de 50px ao redor do grid */
+}
+
+.item {
+    display: grid; /* Define o item como um grid */
+    grid-template-rows: repeat(2, auto) 1fr auto; /* Cria quatro linhas: duas com altura automática, uma que ocupa o espaço restante e uma com altura automática */
+    grid-auto-rows: 1fr; /* altura fixa */
+
+    gap: 20px; /* Adiciona um espaçamento de 20px entre os elementos do item */
+    background: #f7f7f7; /* Define a cor de fundo cinza claro para os itens */
+    border: 1px solid #e7e7e7; /* Define a borda cinza clara ao redor dos itens */
+    padding: 20px; /* Adiciona um preenchimento interno de 20px aos itens */
+    border-radius: 4px; /* Adiciona cantos arredondados aos itens */
+    max-width: 300px;
+    max-height: 500px; 
+    place-items: center start; /* Alinha os itens do grid no centro horizontalmente e no início verticalmente */
+}
+
+.produto {
+    grid-row: 1; /* Posiciona o título na primeira linha do grid do item */
+}
+
+.preco {
+    grid-row: 2; /* Posiciona o preço na segunda linha do grid do item */
+    font-size: 20px; /* Define o tamanho da fonte para 20px */
+}
+
+.descricao {
+    grid-row: 3; /* Posiciona a descrição na terceira linha do grid do item */
+    font-size: 16px; /* Define o tamanho da fonte para 16px */
+}
+
+.botao-comprar {
+    grid-row: 4; /* Posiciona o botão na quarta linha do grid do item */
+    place-self: center; /* Centraliza o botão horizontalmente dentro do item */
+    background: #a8f; /* Define a cor de fundo roxa para o botão de compra */
+    color: #103; /* Define a cor do texto para um tom escuro */
+    padding: 10px 20px; /* Adiciona um preenchimento interno de 10px na vertical e 20px na horizontal */
+    text-decoration: none; /* Remove o sublinhado do link */
+    border-radius: 4px; /* Adiciona cantos arredondados ao botão */
+}
