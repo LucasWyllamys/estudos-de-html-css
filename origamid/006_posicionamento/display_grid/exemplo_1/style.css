@@ -25,7 +25,6 @@ h1 {
     display: grid; /* Define o item como um grid */
     grid-template-rows: repeat(2, auto) 1fr auto; /* Cria quatro linhas: duas com altura automática, uma que ocupa o espaço restante e uma com altura automática */
     grid-auto-rows: 1fr; /* altura fixa */
-
     gap: 20px; /* Adiciona um espaçamento de 20px entre os elementos do item */
     background: #f7f7f7; /* Define a cor de fundo cinza claro para os itens */
     border: 1px solid #e7e7e7; /* Define a borda cinza clara ao redor dos itens */
