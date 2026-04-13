@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table class="tabela-exemplo">
+        <caption>Agenda de Estudos</caption>
+
+        <colgroup>
+            <col style="width: 30%;">
+            <col style="width: 40%;">
+            <col style="width: 30%;">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th scope="col">Dia</th>
+                <th scope="col">Tema</th>
+                <th scope="col">Duração</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row">Segunda</th>
+                <td>Tabelas HTML</td>
+                <td>2h</td>
+            </tr>
+            <tr>
+                <th scope="row">Terça</th>
+                <td>CSS para tabelas</td>
+                <td>1h30</td>
+            </tr>
+            <tr>
+                <th scope="row">Quarta</th>
+                <td colspan="2">Revisão geral</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Meta da semana: fixar HTML + CSS de tabelas</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

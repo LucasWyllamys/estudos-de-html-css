@@ -1,0 +1,20 @@
+.tabela-exemplo {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+.tabela-exemplo th,
+.tabela-exemplo td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.tabela-exemplo thead {
+  background-color: #f0f0f0;
+}
+
+.tabela-exemplo caption {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
